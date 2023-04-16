@@ -1,0 +1,23 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Jmc03091/Weather-App.git"
+  },
+  "author": "Joshua M. Cuellar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jmc03091/Weather-App/issues"
+  },
+  "homepage": "https://github.com/Jmc03091/Weather-App#readme",
+  "devDependencies": {
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1"
+  }
+}
