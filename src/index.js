@@ -1,5 +1,5 @@
 import { displayWeather, clear } from './indexDOM.js';
-
+import {api_key} from './apikeys.js'
 const button = document.querySelector('button');
 const input = document.querySelector('input');
 
@@ -8,9 +8,8 @@ let count = 0;
 button.addEventListener('click', (e) => {
   
   async function getWeather() {
-    const location = await fetch(`https://api.openweathermap.org/data/2.5/weather?id=&appid=dfbd6f7239bc6078a720e43ea127a749&q=${input.value}`, {mode: 'cors'})
+    const location = await fetch(`${api_key} +  ${input.value}`, {mode: 'cors'})
     const data = await location.json();
-    console.log(data);
     const currentWeather = {
       name: data.name,
       temp: `${(data.main.temp - 273.15).toFixed(2)}` + ' Celcius',
